@@ -90,7 +90,7 @@ yarn start
 This app uses the **WeatherAPI**.
 
 1. Visit [https://www.weatherapi.com/](https://www.weatherapi.com/) and get a **free API key**.
-2. In `App.js`, find the API endpoint and **replace the API key** with your own:
+2. In `.env`, find the API endpoint and **replace the API key** with your own:
 
 ```.env
  API_KEY = "your_own_api_key"; // replace this
