@@ -92,16 +92,9 @@ This app uses the **WeatherAPI**.
 1. Visit [https://www.weatherapi.com/](https://www.weatherapi.com/) and get a **free API key**.
 2. In `App.js`, find the API endpoint and **replace the API key** with your own:
 
-```js
-const API_KEY = "your_own_api_key"; // replace this
-const url = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`;
+```.env
+ API_KEY = "your_own_api_key"; // replace this
 ```
-
----
-
-## 📸 Screenshots
-
-*(Add screenshots of the app UI here if available)*
 
 ---
 
@@ -130,7 +123,7 @@ This project is licensed under the MIT License.
 **Nahid Hasan**
 
 * GitHub: [https://github.com/Nahidhasan24](https://github.com/Nahidhasan24)
-* Email: *(add your email here)*
+* Email: *nahidsoftware24@yahoo.com*
 
 ---
 
