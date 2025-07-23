@@ -1,50 +1,139 @@
-# Welcome to your Expo app 👋
+# Weather App ☀️🌧️
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A **simple weather app** built with **React Native (Expo)** that fetches real-time weather data using the [WeatherAPI](http://api.weatherapi.com/). Users can input a city name and instantly get current weather conditions like temperature, wind speed, and weather description.
 
-## Get started
+---
 
-1. Install dependencies
+## 🔍 About
 
-   ```bash
-   npm install
-   ```
+This lightweight mobile app allows users to:
 
-2. Start the app
+- Search any city
+- Get real-time weather updates
+- View temperature, weather condition, and wind speed
+- Simple and clean UI for quick use
+- Built using **React Native + Expo**
+- Powered by the **WeatherAPI**
 
-   ```bash
-    npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## ✨ Features
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- 🔎 Search weather by city name  
+- 🌡️ View temperature in Celsius  
+- 💨 Wind speed display  
+- 📃 Description of current weather conditions  
+- ⚙️ Simple and clean UI  
+- 📡 Live API integration (WeatherAPI.com)  
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🛠️ Tech Stack
 
-When you're ready, run:
+- React Native (via Expo)
+- JavaScript (ES6+)
+- Fetch API for network calls
+- WeatherAPI: http://api.weatherapi.com/v1/current.json
 
-```bash
-npm run reset-project
+---
+
+## 📁 Project Structure
+
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+weather-app/
+├── App.js               # Main React Native component
+├── assets/              # App images/icons
+├── components/          # (Optional) UI components if added
+├── app.json             # Expo configuration
+├── package.json         # Dependencies and scripts
+└── README.md            # You're reading this!
 
-## Learn more
+````
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 🔧 Installation
 
-## Join the community
+1. **Clone the repository**
 
-Join our community of developers creating universal apps.
+```bash
+git clone https://github.com/Nahidhasan24/weather-app.git
+cd weather-app
+````
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+2. **Install dependencies**
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. **Start Expo server**
+
+```bash
+npm start
+# or
+yarn start
+```
+
+4. **Run on device**
+
+* Use the **Expo Go app** on Android/iOS and scan the QR code
+* Or use Android/iOS emulator from your system
+
+---
+
+## 🔑 API Configuration
+
+This app uses the **WeatherAPI**.
+
+1. Visit [https://www.weatherapi.com/](https://www.weatherapi.com/) and get a **free API key**.
+2. In `App.js`, find the API endpoint and **replace the API key** with your own:
+
+```js
+const API_KEY = "your_own_api_key"; // replace this
+const url = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`;
+```
+
+---
+
+## 📸 Screenshots
+
+*(Add screenshots of the app UI here if available)*
+
+---
+
+## 📬 Usage
+
+1. Type a **city name** (e.g. `Dhaka`, `New York`, `London`)
+2. Press **Search**
+3. View **live weather**: temperature, condition, wind speed
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! Feel free to open issues or suggest features.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🙋 Contact
+
+**Nahid Hasan**
+
+* GitHub: [https://github.com/Nahidhasan24](https://github.com/Nahidhasan24)
+* Email: *(add your email here)*
+
+---
+
+🌦️ Thanks for checking out the Weather App!
+If you like it, please **star ⭐ the repo** and share!
+
